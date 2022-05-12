@@ -1,0 +1,244 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+    background: #5a5a5a;
+    color: white;
+    margin: auto;
+
+    animation: 2s fadeIn;
+}
+
+.banner
+{
+    background: url("../Images/background.jpg");
+    background-size: cover;
+    opacity: 0.75;
+
+    font-family: 'Permanent Marker', cursive;
+    padding: 10px;
+
+    color: lightgoldenrodyellow;
+    font-size: 26px;
+
+    display: flex;
+    justify-content: space-between;
+
+    animation: 20s rainbow infinite alternate;
+}
+
+@keyframes rainbow
+{
+    from
+    {
+        filter: hue-rotate(0deg);
+    }
+
+    to
+    {
+        filter: hue-rotate(80deg);
+    }
+}
+
+@keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
+}
+
+.banner .logotype
+{
+    float: left;
+}
+
+.banner .timer
+{
+    float: right;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.navigation
+{
+    background: #777777;
+
+    position: sticky;
+    top: 0;
+}
+
+.navigation ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li a
+{
+    display: block;
+    padding: 10px;
+    color: white;
+
+    transition: 0.3s background;
+}
+
+.navigation ul li a:hover
+{
+    background: #4C0068;
+}
+
+h2
+{
+    font-family: Roboto;
+    font-size: 20px;
+
+    letter-spacing: 2px;
+    padding: 10px 0 10px 0;
+}
+
+.headerImage
+{
+    background: url("../Gallery/genesis.png");
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 320px;
+    margin: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerImage h2
+{
+    text-transform: uppercase;
+
+    font-size: 36px;
+    letter-spacing: 5px;
+
+    color: white;
+    text-shadow: 5px 5px 2px black;
+}
+
+.main
+{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.main h2
+{
+    color: #c361e7;
+}
+
+.footer
+{
+    background: #777777;
+    padding: 10px;
+}
+
+.imageGallery, .storeWidget, .cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galleryItem, .widgetItem, .cardItem
+{
+    margin: 10px;
+    text-align: center;
+}
+
+.galleryItem img, .widgetItem, .cardItem
+{
+    border: 1px solid #4C0068;
+    border-radius: 5px;
+}
+
+.galleryItem img
+{
+    width: 500px;
+}
+
+.widgetItem, .cardItem
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.widgetItem, .cardItem
+{
+    background: #777777;
+}
+
+.widgetItem
+{
+    padding: 10px;
+}
+
+.widgetItem img
+{
+    width: 250px;
+}
+
+.widgetItem p
+{
+    background: #c361e7;
+    border-radius: 5px;
+    padding: 10px;
+
+    transition: 0.3s;
+}
+
+.widgetItem p:hover
+{
+    opacity: 0.5;
+}
+
+.cardItem
+{
+    width: 240px;
+    height: 240px;
+
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px)
+{
+    .banner
+    {
+        display: none;
+    }
+
+    .headerImage
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .galleryItem img
+    {
+        width: 200px;
+    }
+}

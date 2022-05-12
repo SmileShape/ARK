@@ -1,9 +1,0 @@
-git remote add origin https://github.com/SmileShape/ARK.git
-git branch -M main
-git push -u origin main
-
-
-
-purpl: #4C0068
-
-grey: #909090

@@ -1,21 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUP TERAZ</title>
-    <link rel="stylesheet" href="../style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <script src="../JS/script.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../Images/favicon.png">
+
+    <title>Kup ARK</title>
 </head>
-<body>
-    <div class="header">
+
+<body onload="getTime()">
+    <div class="banner">
+        <div class="logotype">
+            <p>ARK: SURVIVAL EVOLVED</p>
+        </div>
+
+        <div class="timer">
+            <p id="time"></p>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <ul>
+            <li><a href="../index.html" title="index.html">STRONA GŁÓWNA</a></li>
+            <li><a href="gallery.html" title="index.html">GALERIA</a></li>
+            <li><a href="buy.html" title="buy.html">KUP TERAZ</a></li>
+            <li><a href="contact.html" title="contact.html">KONTAKT</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <h2>KUP GRĘ ARK: SURVIVAL EVOLVED JUŻ TERAZ</h2>
         <p>
-            ARK: Survival Evolved możesz kupić o tutaj, na <a href="store.steampowered.com">store.steampowered.com</a>
+            ARK: Survival Evolved można zakupić na wielu internetowych sklepach, zajmujących się cyfrową dystrybucją gier komputerowych, takich jak:
         </p>
 
-        <div class="frame">
-            <iframe src="https://store.steampowered.com/widget/346110/?t=Gra%20o%20dinozaurach%20%3B)" frameborder="0" width="646" height="190"></iframe>
+        <div class="storeWidget">
+            <div class="widgetItem">
+                <img src="../Images/steam.png" alt="steam">
+                <a href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/?l=polish"><p>STEAM</p></a>
+            </div>
+
+            <div class="widgetItem">
+                <img src="../Images/epic.png" alt="epic games">
+                <a href="https://store.epicgames.com/pl/p/ark"><p>EPIC GAMES</p></a>
+            </div>
+
+            <div class="widgetItem">
+                <img src="../Images/eneba.png" alt="eneba">
+                <a href="https://www.eneba.com/pl/steam-ark-survival-evolved-steam-key-global"><p>ENEBA</p></a>
+            </div>
+
+            <div class="widgetItem">
+                <img src="../Images/gamivo.png" alt="gamivo">
+                <a href="https://www.gamivo.com/product/ark-survival-evolved?npr=1&adm=1&gclid=EAIaIQobChMIyI-K9-za9wIVigLmCh1pYQ48EAAYASAAEgKLjfD_BwE"><p>GAMIVO</p></a>
+            </div>
+
+            <div class="widgetItem">
+                <img src="../Images/g2a.png" alt="g2a">
+                <a href="https://www.g2a.com/pl/ark-survival-evolved-steam-key-global-i10000001612012"><p>G2A</p></a>
+            </div>
         </div>
+    </div>
+
+    <div class="footer">
+        Stronę wykonali: Szymon Szarafiński oraz Patryk Stolarski &copy; 2022
     </div>
 </body>
 </html>

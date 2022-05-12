@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="Images/favicon.png">
+
     <title>ARK: Survival Evolved</title>
 </head>
 
-<body>
+<body onload="getTime()">
     <div class="banner">
-        <a href="index.html"><img src="Images/genesis.png" alt="header image"></a>
+        <div class="logotype">
+            <p>ARK: SURVIVAL EVOLVED</p>
+        </div>
+
+        <div class="timer">
+            <p id="time"></p>
+        </div>
     </div>
 
     <div class="navigation">
         <ul>
-            <a href="index.html"><li>STRONA GŁÓWNA</a></li>
-            <a href="subpages/buy.html"><li>KUP TERAZ</a></li>
-            <a href="subpages/contact.html"><li>KONTAKT</a></li>
+            <li><a href="index.html" title="index.html">STRONA GŁÓWNA</a></li>
+            <li><a href="Subpages/gallery.html" title="index.html">GALERIA</a></li>
+            <li><a href="Subpages/buy.html" title="buy.html">KUP TERAZ</a></li>
+            <li><a href="Subpages/contact.html" title="contact.html">KONTAKT</a></li>
         </ul>
     </div>
 
-    <div class="header">
-        <h2>WITAJ W ŚWIECIE ARK!</h2>
+    <div class="headerImage">
+        <h2>Witaj w świecie gry ARK!</h2>
+    </div>
+
+    <div class="main">
         <p>
             Jako mężczyzna lub kobieta pozostawiony nagi, wychłodzony i umierający z głodu na brzegach tajemniczej wyspy ARK, musisz polować, zbierać surowce, wykonywać przedmioty, uprawiać ziemię, odkrywać technologie i budować schronienia do przetrwania. Używaj swojego sprytu i surowców aby zabić, oswoić, hodować i podróżować na pradawnych istotach przemieżających tereny. Współpracuj z setkami graczy lub walcz, aby przetrwać, zdominować... i uciec!
         </p>
@@ -31,15 +49,39 @@
             Następujące aspekty są w grze od pierwszego dnia wydania wersji Early Access. Mamy o wiele więcej aspektów i udoskonaleń w długoterminowym planie rozwoju, a tutaj jest to co możesz doświadczyć w ARK aktualnie:
         </p>
 
-        <h2>JEDZENIE, WODA, TEMPERATURA I POGODA:</h2>
+        <h2>OSWAJANIE, TRENOWANIE, WYLĘGANIE I JAZDA NA DINOZAURACH</h2>
+        <p>
+            Dinozaury, stworzenia i hodowla! -- ponad 50 na początek w wersji z wczesnym dostępem oraz ponad 100 planowane w wersji finalnej -- mogą być oswojone poprzez stanowiące wyzwanie pojmanie i proces koligacji, wliczając w to osłabienie dzikiego stworzenia żeby w celu pozbawienia go przytomności a następnie przywrócenie mu zdrowia poprzez karmienie go odpowiednim rodzajem pożywienia. Po oswojeniu możesz wydawać swojemu ulubieńcowi polecenia, które może wykonywać zależnie od tego jak dobrze go oswoiłeś i wytrenowałeś. Zwierzaki, które mogą osiągać coraz wyższe poziomy i zjadać pożywienie, mogą także nosić zapasy oraz ekwipunek jak np. zbroja, zależnie od siły mogą przyprowadzać zdobycz do bazy, a na większych można jeździć obejmując nad nimi pełną kontrolę! Lataj na Pterodaktylu nad ośnieżonymi górami, przenoś sojuszników nad murami wrogów, przemierzaj dżunglę wraz ze stadem Raptorów, przejdź przez bazę wroga na gigantycznym brontozaurze albo ścigaj ofiarę na plecach wściekłego T-Rexa! Bądź częścią dynamicznego cyklu życia ekosystemu z jego drapieżnikami i łańcuchem pokarmowym, w którym jesteś tylko stworzeniem pośród innych gatunków walczących o dominacje i przetrwanie. Zwierzaki można też łączyć w pary z przeciwną płcią, w celu selektywnego rozmnażania kolejnych pokoleń przy użyciu systemu genetycznie dziedziczonych cech. Ten proces uwzględnia zarówno cykl wylęgania jaj, jak i cykl ciążowy ssaków! Uproszczając hoduj i rozwijaj Dinusie!
+        </p>
+
+        <h2>JEDZENIE, WODA, TEMPERATURA I POGODA</h2>
         <p>
             Musisz jeść i pić aby przetrwać, różne rodzaje roślin i mięsa (w tym ludzkie mięso) mają różne właściwości odżywcze. Zapewnienie dostępu do bieżącej wody w swoim domu powinien być twoim priorytetem. Każda aktywność fizyczna wymaga wody i pożywienia, dalekie wyprawy szybko stają się pełnymi napięcia walkami o przetrwanie! Twój ekwipunek sprawi że będziesz poruszał się wolniej, cykl dnia i nocy z losowymi warunkami pogodowymi dodają kolejnych utrudnień zmieniając temperaturę otoczenia, sprawiając że stajesz się głodny lub spragniony jeszcze szybciej. Zbuduj sobie ognisko albo schronienie, stwórz ubiór z szerokiej gamy odzieży i zbroi aby uchronić się przed obrażeniami fizycznymi i ekstremalnymi temperaturami wykorzystując dynamiczny system kalkulowania izolacji!
         </p>
 
-        <h2>ZBIERAJ, BUDUJ KONSTRUKCJE, MALUJ PRZEDMIOTY:</h2>
+        <h2>ZBIERAJ, BUDUJ KONSTRUKCJE, MALUJ PRZEDMIOTY</h2>
         <p>
             Wycinając lasy pełne drzew i wydobywając metal oraz inne cenne surowce, możesz stworzyć elementy masywnych, wielopoziomowych struktur złożonych ze skomplikowanych połączonych ze sobą części takie jak rampy, belki, filary, okna, drzwi, bramy, klapy, rury, drabiny, generatory, kable i cała gama urządzeń elektrycznych. Struktury są zaprojektowane tak by się zapadały, jeżeli odpowiednia ilość elementów wspierających zostanie zniszczona, dlatego też ważnym jest aby wzmacniać swoje budynki. Wszystkie budowle i przedmioty mogą zostać pomalowane by spersonalizować swój dom, możesz również umieszczać oznaczenia, które da się pomalować piksel po pikselu, billboardy oraz inne elementy dekoracyjne. Schronienie pomoże Ci przetrwać ekstremalną pogodę i zapewnia ochronę dla Ciebie i twojego dobytku. Bronie, ubrania i uzbrojenie również mogą zostać pomalowane, aby wyrazić swój własny unikalny styl.
         </p>
+
+        <h2>SADŹ, UPRAWIAJ I PIELĘGNUJ</h2>
+        <p>
+            Zbierz nasiona z dzikiej roślinności rosnącej wokół ciebie, a następnie zasadź, podlej i nawoź je (wszystkie istoty podlegają procesom fizjologicznym, a ich efekty mogą służyć za świetny nawóz) w stworzonych przez siebie polach uprawnych. Pielęgnuj swoje farmy a te będą stale rosnąc zapewniając ci dostęp do rzadkich i smakowitych owoców, które mogą być potem użyte do ugotowania mnóstwa przydatnych przepisów oraz do stworzenia podręcznych toników. Eksploruj wyspę aby znaleźć nawet najrzadsze rodzaje nasion posiadające niezwykłe właściwości! Wegetarianie i weganie mogą się swobodnie rozwijać, a nawet podbić cały ARK w sposób pozbawiony jakiejkolwiek przemocy!
+        </p>
+
+        <h2>SYSTEM PLEMIENNY</h2>
+        <p>
+            Stwórz własne Plemię i zaproś do niego swoich znajomych, wraz z którymi wspólnie będziecie mogli dowodzić swoją watahą dinozaurów. Ponadto, wszyscy członkowie będą mogli korzystać ze wszelkich punktów odrodzenia należących do Plamienia. Awansuj najbardziej zaufanych ludzi na stopień Zarządcy, aby ułatwić organizację wewnątrz Plemienia. Rozporządzaj waszymi kluczowymi przedmiotami oraz kodami dostępu, aby zapewnić dostęp do waszej współdzielonej przestrzeni!
+        </p>
+
+        <h2>EKSTREMALNE MECHANIKI</h2>
+        <p>
+            Wszystko co stworzysz posiada wytrzymałość która się zużywa wraz z użytkowaniem, jeżeli nie będzie naprawiane. Po opuszczeniu gry twoja postać pozostaje uśpiona w ciągle żywym świecie. Twój ekwipunek fizycznie istnieje w pudełkach i na twojej postaci. Wszystko może być złupione i skradzione, aby podnieść bezpieczeństwo musisz się więc budować, zebrać przyjaciół lub zdobyć stworzenia do obrony twojego dobytku. Śmierć jest permanentna, możesz również znokautować, złapać i karmić siłą innych graczy aby wykorzystać ich do swoich celów takich jak pobieranie krwi do transfuzji, używania ich fekaliów jako nawozu albo nakarmić nimi swoje mięsożerne zwierzęta!
+        </p>
+    </div>
+
+    <div class="footer">
+        Stronę wykonali: Szymon Szarafiński oraz Patryk Stolarski &copy; 2022
     </div>
 </body>
 </html>
